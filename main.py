@@ -2,14 +2,13 @@ import requests
 
 
 def weather_check():
-    place_id = input("Для получения информации о погоде введите:"
+    place_id = int(input("Для получения информации о погоде введите:"
                          "\n 0 - Череповец; "
-                         "\n 1 - Аэропорт Шереметьево; \n 'Элтон Джон - мой герой' - Лондон;\n")
-    if place_id == 'Элтон Джон - мой герой':
-        place_id = 2
+                         "\n 1 - Аэропорт Шереметьево; \n 2 - Лондон;\n"))
     place = ['Череповец', 'SVO', 'London']
-    url = f'http://wttr.in/{place[int(place_id)]}?MmnqT&lang=ru'
-    response = requests.get(url)
+    payload = {'MmnqT': '', 'lang': 'ru'}
+    url = f'http://wttr.in/{place[(place_id)]}'
+    response = requests.get(url, params=payload)
     response.raise_for_status()
     print(response.text)
 
