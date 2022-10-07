@@ -1,4 +1,4 @@
-# London, Cherepovets, airport Sheremet'evo weather
+#  weather from https://wttr.in/
 
 Script for checking weather in specified places
 
@@ -15,6 +15,12 @@ pip install requests
 
 python main.py
 
+You can change settings in "payload" variable. All settings are there https://wttr.in/:help
+
+Also you can change places in "places" variable.
+
 # Example
+
+This is example what you should get in terminal
 
 ![](https://dvmn.org/media/wttr_index.png)
