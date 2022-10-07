@@ -1,20 +1,18 @@
 import requests
 
 
-def weather_request(place):
-
+def weather_request():
     payload = {'MmnqT': '', 'lang': 'ru'}
-    url = f'http://wttr.in/{place}'
-    response = requests.get(url, params=payload)
-    response.raise_for_status()
-    return response.text
-
-
-def weather_print():
     places = ['Череповец', 'SVO', 'London']
+    weather = ''
     for place in places:
-        print(weather_request(place))
+        url = f'http://wttr.in/{place}'
+        response = requests.get(url, params=payload)
+        response.raise_for_status()
+        weather += response.text
+    return weather
 
 
 if __name__ == '__main__':
-    weather_print()
+    print(weather_request())
+
