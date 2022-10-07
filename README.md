@@ -1,4 +1,4 @@
-#  weather from https://wttr.in/
+#  weather_check
 
 Script for checking weather in specified places
 
