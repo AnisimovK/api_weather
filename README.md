@@ -11,9 +11,11 @@ requests 2.28.1
 
 Install python3 and requests module. Run main.py script
 
+``` 
 pip install requests
 
-python main.py
+python main.py 
+```
 
 You can change settings in "payload" variable. All settings are there https://wttr.in/:help
 
