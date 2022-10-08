@@ -10,12 +10,24 @@ requests 2.28.1
 
 # How to use
 
-Install python3 and requests module. Run main.py script
+For Windows users:
+
+Open terminal and input the following commands:
 
 ``` 
+
+git clone https://github.com/AnisimovK/weather_check.git
+
+cd weather_check
+
+virtualenv .venv
+
+.venv\Scripts\activate.bat
+
 pip install requests
 
 python main.py 
+
 ```
 
 You can change settings in "payload" variable. All settings are there https://wttr.in/:help
