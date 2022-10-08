@@ -152,5 +152,5 @@ cython_debug/
 .idea
 
 # Windows:
-desktop.ini
 *.ini
+desktop.ini
