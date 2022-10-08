@@ -1,10 +1,11 @@
-#  weather from https://wttr.in/
+#  weather_check
 
 Script for checking weather in specified places
 
 # Requirements
 
 python  3.10.0
+
 requests 2.28.1
 
 # How to use
