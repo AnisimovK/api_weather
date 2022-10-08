@@ -1,7 +1,7 @@
 import requests
 
 
-def weather_request():
+def request_weather():
     payload = {'MmnqT': '', 'lang': 'ru'}
     places = ['Череповец', 'SVO', 'London']
     weather = ''
