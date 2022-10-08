@@ -14,5 +14,5 @@ def request_weather():
 
 
 if __name__ == '__main__':
-    print(weather_request())
+    print(request_weather())
 
